@@ -1,0 +1,11 @@
+config BR2_PACKAGE_ECL
+	bool "ECL (Embeddable Common-Lisp)"
+	select BR2_PACKAGE_GMP
+	select BR2_PACKAGE_BDWGC
+	help
+	  Embeddable Common-Lisp release 16.1.3
+	  Intended for ts7820-utils package to support one of the libraries
+	  required for operation.
+	  
+	  Note that without gcc on target, 'ecl' is likely not useful in any
+	  other context.
