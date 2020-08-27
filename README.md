@@ -6,6 +6,7 @@ This branch implements BR_EXTERNAL for Technologic systems products.  Currently 
 
 * TS-4100
 * TS-7100 (via ts7250v3_defconfig)
+* TS-7180
 * TS-7250-V3
 * TS-7553-V2
 
@@ -19,6 +20,10 @@ This supports these defconfigs:
 	* Generates a tar for use on a thumbdrive that runs a blast.sh script on the drive to rewrite and verify the media on the board. See the manual for information on this Production Mechanism.
 	* Outputs to buildroot/output/images/ts4100-usb-production-rootfs.tar.bz2
 	* Extract this to a USB drive with one partition, formatted either ext2/3/4 or fat32.
+* make ts7180_defconfig
+	* Supports TS-7180
+	* Generates a minimal Linux with hardware support (based on 4.1 kernel)
+	* Write to any boot device for the unit: USB, SD, eMMC, NFS, etc.
 * make ts7250v3_defconfig
 	* Supports TS-7250-V3 and TS-7100
 	* Generates a minimal Linux with hardware support
